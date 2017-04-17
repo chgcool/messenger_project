@@ -33,5 +33,5 @@ CREATE TABLE conversation_message (
 CREATE TABLE attachments (
   attachment_id INT PRIMARY KEY ,
   message_id INT REFERENCES messages (message_id) UNIQUE NOT NULL,
-  file UUID--some tipe of data
+  file UUID--some type of data
 );
